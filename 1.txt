@@ -1,0 +1,23 @@
+<script src="name.js"></script>
+
+monitorEvents(document);   Read all moves clicks with mouse 
+unmonitorEvents(document);    cancell it
+
+const mainHeading = document.querySelector('h1');
+mainHeading.addEventListener('click', function () {
+  console.log('The heading was clicked!');
+  mainHeading.style.backgroundColor = 'purple'; 
+}); add event do some thing such a message or chane color when click on h1
+
+document.addEventListener('keypress', function () {
+    document.body.remove();
+});
+
+
+function f() {
+    console.log('howdy');
+}
+document.addEventListener('click', f);  
+document.removeEventListener('click', f);
+//for same fun
+
